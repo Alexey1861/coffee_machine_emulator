@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResourcesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/yellow">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="40dp"
+                android:background="@color/light_yellow">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resources"
+                    android:textSize="25sp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/fragment2_output_milk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/fragment2_output_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/fragment2_output_milk"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/fragment2_output_beans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/fragment2_output_water"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/fragment2_output_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="23sp"
+                    android:layout_below="@+id/fragment2_output_beans"
+
+                    android:layout_marginStart="150dp"/>
+
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/fragment2_input_milk_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="put milk"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/fragment2_input_water_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="put water"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/fragment2_input_beans_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="put beans"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/fragment2_input_cash_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="put cash"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"/>
+
+        <ImageButton
+            android:id="@+id/fragment2_add_resources_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/plus"
+            android:scaleType="centerInside"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="160dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
